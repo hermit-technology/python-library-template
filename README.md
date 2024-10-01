@@ -11,7 +11,7 @@ Ensure both python and poetry are installed.
 
 ## Building
 
-1. Change to the module directory and create (and activate) a python virtual environment for isolation
+Change to the module directory and create (and activate) a python virtual environment for isolation
 
 ```sh
 cd example_library
@@ -19,19 +19,19 @@ python -m venv .venv
 source .venv/bin/activate 
 ```
 
-2. Build the project via poetry
+Build the project via poetry
 
 ```sh
 poetry install && poetry build
 ```
 
-3. This will output build libraries to `/dist`. To try them out, pip install them into your virtual environment
+This will output build libraries to `/dist`. To try them out, pip install them into your virtual environment
 
 ```sh
 pip install dist/example_library-0.1.0-py3-none-any.whl
 ```
 
-4. Finally test it using the `example_usage.py` script provided
+Finally test it using the `example_usage.py` script provided
 
 ```sh
 cd ..
