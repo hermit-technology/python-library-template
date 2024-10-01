@@ -19,19 +19,19 @@ python -m venv .venv
 source .venv/bin/activate 
 ```
 
-1. Build the project via poetry
+2. Build the project via poetry
 
 ```sh
 poetry install && poetry build
 ```
 
-1. This will output build libraries to `/dist`. To try them out, pip install them into your virtual environment
+3. This will output build libraries to `/dist`. To try them out, pip install them into your virtual environment
 
 ```sh
 pip install dist/example_library-0.1.0-py3-none-any.whl
 ```
 
-1. Finally test it using the `example_usage.py` script provided
+4. Finally test it using the `example_usage.py` script provided
 
 ```sh
 cd ..
